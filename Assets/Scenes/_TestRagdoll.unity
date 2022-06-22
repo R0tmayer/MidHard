@@ -419,54 +419,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 795482468, guid: 3f7db74cf6be7574a937eba714f71675, type: 3}
-      propertyPath: m_SwingLimitSpring.spring
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 954755726, guid: 3f7db74cf6be7574a937eba714f71675, type: 3}
-      propertyPath: m_SwingLimitSpring.spring
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1007243310, guid: 3f7db74cf6be7574a937eba714f71675, type: 3}
-      propertyPath: m_SwingLimitSpring.spring
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1204740408, guid: 3f7db74cf6be7574a937eba714f71675, type: 3}
-      propertyPath: m_SwingLimitSpring.spring
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1233039210, guid: 3f7db74cf6be7574a937eba714f71675, type: 3}
-      propertyPath: m_SwingLimitSpring.spring
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1287511941, guid: 3f7db74cf6be7574a937eba714f71675, type: 3}
-      propertyPath: m_SwingLimitSpring.spring
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1494524500, guid: 3f7db74cf6be7574a937eba714f71675, type: 3}
-      propertyPath: m_SwingLimitSpring.spring
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1745887561, guid: 3f7db74cf6be7574a937eba714f71675, type: 3}
-      propertyPath: _forceMode
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1745887561, guid: 3f7db74cf6be7574a937eba714f71675, type: 3}
-      propertyPath: _forcePelvis
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 1746987878, guid: 3f7db74cf6be7574a937eba714f71675, type: 3}
-      propertyPath: m_SwingLimitSpring.spring
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1746987880, guid: 3f7db74cf6be7574a937eba714f71675, type: 3}
-      propertyPath: m_SwingLimitSpring.spring
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2071403343, guid: 3f7db74cf6be7574a937eba714f71675, type: 3}
-      propertyPath: m_SwingLimitSpring.spring
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5923067744297806512, guid: 3f7db74cf6be7574a937eba714f71675, type: 3}
       propertyPath: m_Name
       value: Stickman_King

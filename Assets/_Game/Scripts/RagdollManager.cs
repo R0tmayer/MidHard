@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using UnityEngine;
 
 namespace _Game.Scripts
@@ -7,10 +8,10 @@ namespace _Game.Scripts
     {
         [SerializeField] private Rigidbody[] _rigidbodies;
         [SerializeField] private Rigidbody _pelvisRb;
-        // [SerializeField] private Rigidbody _rootRB;
         [SerializeField] private float _forcePelvis;
-        // [SerializeField] private float _forceRoot;
         [SerializeField] private ForceMode _forceMode;
+        [SerializeField] private Transform _spear;
+        [SerializeField] private float _lerpRate;
 
         private void OnCollisionEnter(Collision collision)
         {
@@ -28,8 +29,6 @@ namespace _Game.Scripts
             if (Input.GetMouseButtonDown(0))
             {
                 MakeKinematic(false);
-                // _rootRB.AddForce(-transform.forward * _forceRoot, _forceMode);
-                _pelvisRb.AddForce(-transform.forward * _forcePelvis, _forceMode);
             }
         }
 
@@ -47,6 +46,36 @@ namespace _Game.Scripts
             {
                 _rigidbodies[i].useGravity = state;
             }
+        }
+
+        private IEnumerator PushCoroutine()
+        {
+            _pelvisRb.AddForce(-transform.forward * _forcePelvis, _forceMode);
+            float lerp = 0;
+
+            while (true)
+            {
+                var toVector = _spear.transform.position + new Vector3(0, 0, -0.5f);
+                toVector.y = transform.position.y;
+
+                print("Lerp");
+                lerp += Time.deltaTime * _lerpRate;
+                transform.position = Vector3.Lerp(transform.position, toVector, lerp);
+                yield return null;
+            }
+        }
+
+        public void StickToWall()
+        {
+            StopCoroutine(PushCoroutine());
+            _pelvisRb.constraints = RigidbodyConstraints.FreezePositionX |
+                                    RigidbodyConstraints.FreezePositionY |
+                                    RigidbodyConstraints.FreezePositionZ;
+        }
+
+        public void Push()
+        {
+            StartCoroutine(PushCoroutine());
         }
     }
 }
