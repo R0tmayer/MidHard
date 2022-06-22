@@ -82,7 +82,7 @@ CharacterJoint:
   m_SwingAxis: {x: 0, y: 1, z: 0}
   m_TwistLimitSpring:
     spring: 0
-    damper: 2
+    damper: 0
   m_LowTwistLimit:
     limit: 0
     bounciness: 0
@@ -224,7 +224,7 @@ CharacterJoint:
   m_SwingAxis: {x: 0, y: 1, z: 0}
   m_TwistLimitSpring:
     spring: 0
-    damper: 2
+    damper: 0
   m_LowTwistLimit:
     limit: 0
     bounciness: 0
@@ -367,7 +367,7 @@ CharacterJoint:
   m_SwingAxis: {x: 0, y: 1, z: 0}
   m_TwistLimitSpring:
     spring: 0
-    damper: 2
+    damper: 0
   m_LowTwistLimit:
     limit: 0
     bounciness: 0
@@ -688,7 +688,7 @@ CharacterJoint:
   m_SwingAxis: {x: 0, y: 1, z: 0}
   m_TwistLimitSpring:
     spring: 0
-    damper: 2
+    damper: 0
   m_LowTwistLimit:
     limit: 0
     bounciness: 0
@@ -1130,7 +1130,7 @@ CharacterJoint:
   m_SwingAxis: {x: 0, y: 1, z: 0}
   m_TwistLimitSpring:
     spring: 0
-    damper: 2
+    damper: 0
   m_LowTwistLimit:
     limit: 0
     bounciness: 0
@@ -1305,7 +1305,7 @@ CharacterJoint:
   m_SwingAxis: {x: 0, y: 1, z: 0}
   m_TwistLimitSpring:
     spring: 0
-    damper: 2
+    damper: 0
   m_LowTwistLimit:
     limit: 0
     bounciness: 0
@@ -1627,7 +1627,7 @@ CharacterJoint:
   m_SwingAxis: {x: 0, y: 1, z: 0}
   m_TwistLimitSpring:
     spring: 0
-    damper: 2
+    damper: 0
   m_LowTwistLimit:
     limit: 0
     bounciness: 0
@@ -1866,7 +1866,7 @@ CharacterJoint:
   m_SwingAxis: {x: 0, y: 1, z: 0}
   m_TwistLimitSpring:
     spring: 0
-    damper: 2
+    damper: 0
   m_LowTwistLimit:
     limit: 0
     bounciness: 0
@@ -1977,7 +1977,7 @@ CharacterJoint:
   m_SwingAxis: {x: 0, y: 1, z: 0}
   m_TwistLimitSpring:
     spring: 0
-    damper: 2
+    damper: 0
   m_LowTwistLimit:
     limit: 0
     bounciness: 0
@@ -2555,7 +2555,7 @@ CharacterJoint:
   m_SwingAxis: {x: 0, y: 1, z: 0}
   m_TwistLimitSpring:
     spring: 0
-    damper: 2
+    damper: 0
   m_LowTwistLimit:
     limit: 0
     bounciness: 0
