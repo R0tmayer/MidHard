@@ -5,7 +5,7 @@ namespace _Game.Scripts
 {
     public class JointCollision : MonoBehaviour
     {
-        public event Action<Collider, FixedJoint> Collided;
+        public event Action<Collider, Joint> Collided;
 
         private bool _connected;
 
@@ -16,7 +16,7 @@ namespace _Game.Scripts
 
             _connected = true;
             GetComponent<Collider>().enabled = false;
-            Collided?.Invoke(other, GetComponent<FixedJoint>());
+            Collided?.Invoke(other, GetComponent<Joint>());
         }
     }
 }

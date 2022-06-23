@@ -13,27 +13,26 @@ namespace _Game.Scripts
             ActivateGravity(true);
         }
 
-        private void Start()
+        public void WakeUp()
+        {
+            for (var i = 0; i < _rigidbodies.Length; i++)
+            {
+                _rigidbodies[i].sleepThreshold = 0;
+                _rigidbodies[i].WakeUp();
+            }
+            
+        }
+        private void Awake()
         {
             MakeKinematic(true);
             ActivateGravity(false);
         }
 
-        private void Update()
-        {
-            if (Input.GetMouseButtonDown(0))
-            {
-                MakeKinematic(false);
-            }
-        }
-
-        private void MakeKinematic(bool state)
+        public void MakeKinematic(bool state)
         {
             for (var i = 0; i < _rigidbodies.Length; i++)
             {
                 _rigidbodies[i].isKinematic = state;
-                _rigidbodies[i].WakeUp();
-                
             }
         }
 
